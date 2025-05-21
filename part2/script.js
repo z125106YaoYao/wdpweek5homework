@@ -21,7 +21,6 @@ function showQuestion() {
   const q = questions[currentQuestionIndex];
   questionText.textContent = q.question;
 
-  q.options.forEach((option, index) => {
   // TODO:
   // 1. Create a button element
   // 2. Set the button's text to the option
@@ -35,7 +34,7 @@ function showQuestion() {
     button.className = "option-btn";
     button.onclick = () => checkAnswer(index);
     optionsContainer.appendChild(button);
-  });
+ 
 });
 }
 
